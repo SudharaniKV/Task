@@ -1,0 +1,21 @@
+[
+    {
+        "Name": "Sudha",
+        "Age" :27,
+        "Company":"jspider",
+        "Salary":25000
+        
+    },
+    {
+        "Name": "Rashmi",
+        "Age":29,
+        "Company":"Qspider",
+        "Salary":35000
+    },
+    {
+        "Name": "Shashi",
+        "Age" :30,
+        "Company":"Testyantra",
+        "Salary":50000
+    }
+]

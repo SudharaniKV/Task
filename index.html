@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <ng-view></ng-view>
+    <div ng-controller="myctr">
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Company</th>
+                <th>Salary</th>
+                <th>Delete</th>
+            </tr>
+            <tr ng-repeat="user in users">
+                <td>{{user.Name}}</td>
+                <td>{{user.Age}}</td>
+                <td>{{user.Company}}</td>
+                <td>{{user.Salary}}</td>
+                <td ng-click="removeuser(user)">x</td>
+            </tr>
+        </table>
+    <form ng-submit="addusers()"><br/>
+     <input type="text" placeholder="name" ng-model="newName"/><br/>   
+    <input type="text" placeholder="age" ng-model="newAge"/><br/>
+    <input type="text" placeholder="company" ng-model="newCompany"/><br/>
+    <input type="text" placeholder="salary" ng-model="newSalary"/><br/>
+    <input type="submit" value="submit"/><br/>
+
+    </form>
+</div>
+        <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
